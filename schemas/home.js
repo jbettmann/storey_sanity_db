@@ -39,7 +39,7 @@ export default defineType({
         defineField({
           name: 'title',
           title: 'Hero Title',
-          type: 'string',
+          type: 'text',
         }),
         defineField({
           name: 'slug',
@@ -62,7 +62,7 @@ export default defineType({
         defineField({
           name: 'body',
           title: 'Hero Body',
-          type: 'blockContent',
+          type: 'text',
         }),
       ],
     }),
@@ -105,7 +105,7 @@ export default defineType({
             defineField({
               name: 'body',
               title: 'Body Card 1',
-              type: 'blockContent',
+              type: 'text',
             }),
             defineField({
               name: 'button',
@@ -151,7 +151,7 @@ export default defineType({
             defineField({
               name: 'body',
               title: 'Body Card 2',
-              type: 'blockContent',
+              type: 'text',
             }),
             defineField({
               name: 'button',
@@ -197,7 +197,7 @@ export default defineType({
             defineField({
               name: 'body',
               title: 'Body Card 3',
-              type: 'blockContent',
+              type: 'text',
             }),
             defineField({
               name: 'button',
@@ -248,7 +248,7 @@ export default defineType({
         defineField({
           name: 'body',
           title: 'About body on Hompage',
-          type: 'blockContent',
+          type: 'text',
         }),
         defineField({
           name: 'button',
@@ -287,7 +287,7 @@ export default defineType({
         defineField({
           name: 'body',
           title: 'Si Habla body on Hompage',
-          type: 'blockContent',
+          type: 'text',
         }),
       ],
     }),
