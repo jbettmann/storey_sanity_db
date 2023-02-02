@@ -88,7 +88,7 @@ export default defineType({
               name: 'slug',
               title: 'Slug Card 1',
               type: 'slug',
-              description: 'Card title all lowercase',
+              description: '** MUST BE EXACT SAME AS NAVIGATION SLUG **',
               options: {
                 source: 'title',
                 maxLength: 96,
