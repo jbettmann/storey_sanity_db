@@ -103,7 +103,7 @@ export default defineType({
               },
             }),
             defineField({
-              name: 'body',
+              name: 'sub',
               title: 'Body Card 1',
               type: 'text',
             }),
@@ -149,7 +149,7 @@ export default defineType({
               },
             }),
             defineField({
-              name: 'body',
+              name: 'sub',
               title: 'Body Card 2',
               type: 'text',
             }),
@@ -195,7 +195,7 @@ export default defineType({
               },
             }),
             defineField({
-              name: 'body',
+              name: 'sub',
               title: 'Body Card 3',
               type: 'text',
             }),

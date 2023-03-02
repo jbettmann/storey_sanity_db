@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'post',
-  title: 'Post',
+  name: 'blog',
+  title: 'Blog',
   type: 'document',
   fields: [
     defineField({
@@ -34,12 +34,6 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
-    }),
-    defineField({
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
@@ -49,6 +43,36 @@ export default defineType({
       title: 'Body',
       type: 'blockContent',
     }),
+    {
+      name: 'projectType', // name to find in fetch
+      title: 'Project type', // options that shows on Sanity studio
+      type: 'string',
+      options: {
+        list: [
+          // dropdown options in Sanity to pick from
+          {value: 'buy', title: 'Buy'},
+          {value: 'sell', title: 'Sell'},
+          {value: 'investment', title: 'Investment'},
+          {value: 'remodel', title: 'Remodel'},
+          {value: 'consult', title: 'Consult'},
+          {value: 'property management', title: 'Property Management'},
+        ],
+      },
+    },
+
+    {
+      // adds tags
+      name: 'tags',
+      type: 'array',
+      of: [
+        {
+          type: 'string',
+        },
+      ],
+      options: {
+        layout: 'tags',
+      },
+    },
   ],
 
   preview: {
