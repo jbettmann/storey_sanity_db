@@ -7,7 +7,6 @@ import footer from './footer'
 import resources from './resources'
 import blog from './blog'
 import faqs from './faqs'
-import buyFAQ from './buyFAQ'
 
 export const schemaTypes = [
   navbar,
@@ -19,5 +18,4 @@ export const schemaTypes = [
   category,
   blockContent,
   footer,
-  buyFAQ,
 ]

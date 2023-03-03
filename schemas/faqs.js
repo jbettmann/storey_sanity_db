@@ -10,6 +10,12 @@ export default defineType({
       title: 'Title',
       type: 'string',
     }),
+    defineField({
+      name: 'id',
+      title: 'Id',
+      description: 'For order of display on Resource page. 1 being first',
+      type: 'string',
+    }),
     defineType({
       name: 'faq',
       title: 'FAQ',
