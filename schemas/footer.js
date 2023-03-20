@@ -58,5 +58,13 @@ export default defineType({
       title: 'Email',
       type: 'string',
     }),
+    defineField({
+      name: 'realtorLogo',
+      title: 'Realtor Logo',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
   ],
 })

@@ -15,7 +15,8 @@ export default defineType({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
-      description: 'Home title all lowercase',
+      validation: (Rule) => Rule.required(),
+      description: 'Home title but all lowercase. Click "Generate" button --->',
       options: {
         source: 'title',
         maxLength: 96,
@@ -26,6 +27,7 @@ export default defineType({
       name: 'logo',
       title: 'Logo Image',
       type: 'image',
+      validation: (Rule) => Rule.required(),
       options: {
         hotspot: true,
       },
@@ -45,7 +47,9 @@ export default defineType({
           name: 'slug',
           title: 'Hero Slug',
           type: 'slug',
-          description: 'Hero title all lowercase',
+          validation: (Rule) => Rule.required(),
+
+          description: 'Hero title but all lowercase. Click "Generate" button --->',
           options: {
             source: 'title',
             maxLength: 96,
@@ -55,6 +59,8 @@ export default defineType({
           name: 'mainImage',
           title: 'Hero Main image',
           type: 'image',
+          validation: (Rule) => Rule.required(),
+
           options: {
             hotspot: true,
           },
@@ -88,6 +94,8 @@ export default defineType({
               name: 'slug',
               title: 'Slug Card 1',
               type: 'slug',
+              validation: (Rule) => Rule.required(),
+
               description: '** MUST BE EXACT SAME AS NAVIGATION SLUG **',
               options: {
                 source: 'title',
@@ -98,6 +106,8 @@ export default defineType({
               name: 'mainImage',
               title: 'Main image Card 1',
               type: 'image',
+              validation: (Rule) => Rule.required(),
+
               options: {
                 hotspot: true,
               },
@@ -111,6 +121,8 @@ export default defineType({
               name: 'button',
               title: 'Button Text Card 1',
               type: 'string',
+              validation: (Rule) => Rule.required(),
+
               description: 'This text will be shown on card button',
               options: {
                 source: 'title',
@@ -134,7 +146,9 @@ export default defineType({
               name: 'slug',
               title: 'Slug Card 2',
               type: 'slug',
-              description: 'Card title all lowercase',
+              validation: (Rule) => Rule.required(),
+
+              description: 'Card title but all lowercase. Click "Generate" button --->',
               options: {
                 source: 'title',
                 maxLength: 96,
@@ -144,6 +158,8 @@ export default defineType({
               name: 'mainImage',
               title: 'Main image Card 2',
               type: 'image',
+              validation: (Rule) => Rule.required(),
+
               options: {
                 hotspot: true,
               },
@@ -157,6 +173,8 @@ export default defineType({
               name: 'button',
               title: 'Button Text Card 2',
               type: 'string',
+              validation: (Rule) => Rule.required(),
+
               description: 'This text will be shown on card button',
               options: {
                 source: 'title',
@@ -180,7 +198,9 @@ export default defineType({
               name: 'slug',
               title: 'Slug Card 3',
               type: 'slug',
-              description: 'Card title all lowercase',
+              validation: (Rule) => Rule.required(),
+
+              description: 'Card title but all lowercase. Click "Generate" button --->',
               options: {
                 source: 'title',
                 maxLength: 96,
@@ -190,6 +210,8 @@ export default defineType({
               name: 'mainImage',
               title: 'Main image Card 3',
               type: 'image',
+              validation: (Rule) => Rule.required(),
+
               options: {
                 hotspot: true,
               },
@@ -203,6 +225,8 @@ export default defineType({
               name: 'button',
               title: 'Button Text Card 3',
               type: 'string',
+              validation: (Rule) => Rule.required(),
+
               description: 'This text will be shown on card button',
               options: {
                 source: 'title',
@@ -229,7 +253,9 @@ export default defineType({
           name: 'slug',
           title: 'Slug',
           type: 'slug',
-          description: 'About title all lowercase',
+          validation: (Rule) => Rule.required(),
+
+          description: 'About title but all lowercase. Click "Generate" button --->',
           options: {
             source: 'title',
             maxLength: 96,
@@ -254,6 +280,8 @@ export default defineType({
           name: 'button',
           title: 'Button Text for About Homepage',
           type: 'string',
+          validation: (Rule) => Rule.required(),
+
           description: 'This text will be shown on button',
           options: {
             source: 'title',
@@ -278,7 +306,9 @@ export default defineType({
           name: 'slug',
           title: 'Slug',
           type: 'slug',
-          description: 'Si Habla title all lowercase',
+          validation: (Rule) => Rule.required(),
+
+          description: 'Si Habla title but all lowercase. Click "Generate" button --->',
           options: {
             source: 'title',
             maxLength: 96,

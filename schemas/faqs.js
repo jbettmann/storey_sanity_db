@@ -13,8 +13,15 @@ export default defineType({
     defineField({
       name: 'id',
       title: 'Id',
-      description: 'For order of display on Resource page. 1 being first',
+      description: 'DO NOT CHANGE! For order of display on Resource page.',
       type: 'string',
+    }),
+    defineField({
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      validation: (Rule) => Rule.required(),
+      description: 'Title but all lowercase. ** Slug MUST match the Slug on respected webpage **',
     }),
     defineType({
       name: 'faq',
