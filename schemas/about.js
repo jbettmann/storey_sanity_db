@@ -8,7 +8,7 @@ export default defineType({
     defineField({
       name: 'title',
       title: 'Sanity Title',
-      description: 'NOT Displayed on webpage',
+      description: 'NOT Displayed on webpages',
       type: 'string',
     }),
     defineField({
