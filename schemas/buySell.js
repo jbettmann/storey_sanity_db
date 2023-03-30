@@ -385,8 +385,8 @@ export default defineType({
               type: 'string',
             }),
             defineField({
-              name: 'tip',
-              title: 'Tip',
+              name: 'description',
+              title: 'Description',
               type: 'blockContent',
               description: '** MAX 500 CHARACTERS **',
               validation: (Rule) => Rule.max(500),
