@@ -66,7 +66,7 @@ export default defineType({
                       {value: 'sell', title: 'Sell'},
                       {value: 'investment', title: 'Investment'},
                       {value: 'remodel', title: 'Remodel'},
-                      {value: 'consult', title: 'Consult'},
+                      {value: 'consulting', title: 'Consulting'},
                       {value: 'property management', title: 'Property Management'},
                     ],
                   },

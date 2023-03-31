@@ -98,8 +98,8 @@ export default defineType({
 
         // Rental Benefit Cards *************************
         defineType({
-          name: 'cards',
-          title: 'Rental Benefit Cards',
+          name: 'benefits',
+          title: 'Rental Benefits',
           type: 'document',
           fields: [
             defineField({
@@ -108,93 +108,100 @@ export default defineType({
               type: 'string',
               description: 'Displayed on webpage ',
             }),
-            // Card 1
             defineType({
-              name: 'card_1',
-              title: 'Card 1',
+              name: 'cards',
+              title: 'Rental Benefit Cards',
               type: 'document',
               fields: [
-                defineField({
-                  name: 'title',
-                  title: 'Title',
-                  type: 'string',
+                // Card 1
+                defineType({
+                  name: 'card_1',
+                  title: 'Card 1',
+                  type: 'document',
+                  fields: [
+                    defineField({
+                      name: 'title',
+                      title: 'Title',
+                      type: 'string',
+                    }),
+                    // defineField({
+                    //   name: 'mainImage',
+                    //   title: 'Main image Card 1',
+                    //   type: 'image',
+                    //   validation: (Rule) => Rule.required(),
+                    //   options: {
+                    //     hotspot: true,
+                    //   },
+                    // }),
+                    defineField({
+                      name: 'description',
+                      title: 'Benefit Description for Card 1',
+                      description: 'Keep short and "skimable". ** MAX 180 CHARACTERS **',
+                      validation: (Rule) => Rule.max(180),
+                      type: 'text',
+                    }),
+                  ],
                 }),
-                // defineField({
-                //   name: 'mainImage',
-                //   title: 'Main image Card 1',
-                //   type: 'image',
-                //   validation: (Rule) => Rule.required(),
-                //   options: {
-                //     hotspot: true,
-                //   },
-                // }),
-                defineField({
-                  name: 'description',
-                  title: 'Benefit Description for Card 1',
-                  description: 'Keep short and "skimable". ** MAX 180 CHARACTERS **',
-                  validation: (Rule) => Rule.max(180),
-                  type: 'text',
-                }),
-              ],
-            }),
-            // Card 2
-            defineType({
-              name: 'card_2',
-              title: 'Card 2',
-              type: 'document',
-              fields: [
-                defineField({
-                  name: 'title',
-                  title: 'Title',
-                  type: 'string',
-                }),
+                // Card 2
+                defineType({
+                  name: 'card_2',
+                  title: 'Card 2',
+                  type: 'document',
+                  fields: [
+                    defineField({
+                      name: 'title',
+                      title: 'Title',
+                      type: 'string',
+                    }),
 
-                // defineField({
-                //   name: 'mainImage',
-                //   title: 'Main image Card 2',
-                //   type: 'image',
-                //   validation: (Rule) => Rule.required(),
+                    // defineField({
+                    //   name: 'mainImage',
+                    //   title: 'Main image Card 2',
+                    //   type: 'image',
+                    //   validation: (Rule) => Rule.required(),
 
-                //   options: {
-                //     hotspot: true,
-                //   },
-                // }),
-                defineField({
-                  name: 'description',
-                  title: 'Benefit Description for Card 2',
-                  description: 'Keep short and "skimable". ** MAX 180 CHARACTERS **',
-                  validation: (Rule) => Rule.max(180),
-                  type: 'text',
+                    //   options: {
+                    //     hotspot: true,
+                    //   },
+                    // }),
+                    defineField({
+                      name: 'description',
+                      title: 'Benefit Description for Card 2',
+                      description: 'Keep short and "skimable". ** MAX 180 CHARACTERS **',
+                      validation: (Rule) => Rule.max(180),
+                      type: 'text',
+                    }),
+                  ],
                 }),
-              ],
-            }),
-            // Card 3
-            defineType({
-              name: 'card_3',
-              title: 'Card 3',
-              type: 'document',
-              fields: [
-                defineField({
-                  name: 'title',
-                  title: 'Title',
-                  type: 'string',
-                }),
-                // defineField({
-                //   name: 'mainImage',
-                //   title: 'Main image Card 3',
-                //   type: 'image',
-                //   validation: (Rule) => Rule.required(),
+                // Card 3
+                defineType({
+                  name: 'card_3',
+                  title: 'Card 3',
+                  type: 'document',
+                  fields: [
+                    defineField({
+                      name: 'title',
+                      title: 'Title',
+                      type: 'string',
+                    }),
+                    // defineField({
+                    //   name: 'mainImage',
+                    //   title: 'Main image Card 3',
+                    //   type: 'image',
+                    //   validation: (Rule) => Rule.required(),
 
-                //   options: {
-                //     hotspot: true,
-                //   },
-                // }),
-                defineField({
-                  name: 'description',
-                  title: 'Benefit Description for Card 3',
-                  description: 'Keep short and "skimable". ** MAX 180 CHARACTERS **',
-                  validation: (Rule) => Rule.max(180),
-                  type: 'text',
+                    //   options: {
+                    //     hotspot: true,
+                    //   },
+                    // }),
+                    defineField({
+                      name: 'description',
+                      title: 'Benefit Description for Card 3',
+                      description: 'Keep short and "skimable". ** MAX 180 CHARACTERS **',
+                      validation: (Rule) => Rule.max(180),
+                      type: 'text',
+                    }),
+                  ],
                 }),
               ],
             }),
@@ -263,11 +270,19 @@ export default defineType({
             }),
             defineField({
               name: 'description',
+              title: 'Fix & Flip Heading',
+              description:
+                'Keep short and "skimable". Appears below Rental/Fix & Flip toggle button. ** MAX 180 CHARACTERS **',
+              validation: (Rule) => Rule.max(180),
+              type: 'text',
+            }),
+            defineField({
+              name: 'subDescription',
               title: 'Fix & Flip description',
               description:
-                'Keep short and "skimable". Appears below Rental/Fix & Flip toggle button. ** MAX 1000 CHARACTERS **',
-              validation: (Rule) => Rule.max(1000),
-              type: 'text',
+                'Keep short and "skimable". Appears below Fix & Flip Heading. ** MAX 500 CHARACTERS **',
+              validation: (Rule) => Rule.max(500),
+              type: 'blockContent',
             }),
           ],
         }),
