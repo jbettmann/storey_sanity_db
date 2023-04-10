@@ -9,12 +9,14 @@ import faqs from './faqs'
 import buySell from './buySell'
 import investment from './investment'
 import testimonials from './testimonials'
+import remodel from './remodel'
 
 export const schemaTypes = [
   navbar,
   home,
   buySell,
   investment,
+  remodel,
   about,
   blog,
   faqs,
