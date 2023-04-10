@@ -293,41 +293,6 @@ export default defineType({
           ],
         }),
 
-        // // Why Sell Checklist *************************
-        // defineType({
-        //   name: 'whyChecklist',
-        //   title: 'Why Sell with Storey Checklist',
-        //   type: 'document',
-        //   fields: [
-        //     defineField({
-        //       name: 'title',
-        //       title: 'Title',
-        //       type: 'string',
-        //     }),
-        //     defineType({
-        //       name: 'checklist',
-        //       title: 'Why Sell with Storey Checklist',
-        //       type: 'array',
-        //       of: [
-        //         {
-        //           title: 'Why?',
-        //           name: 'why',
-        //           type: 'object',
-        //           fields: [
-        //             {
-        //               title: 'Checklist Item',
-        //               name: 'item',
-        //               type: 'string',
-        //               description: '** MAX 100 CHARACTERS **',
-        //               validation: (Rule) => Rule.max(100),
-        //             },
-        //           ],
-        //         },
-        //       ],
-        //     }),
-        //   ],
-        // }),
-
         // Plan A Remodel *************************
         defineType({
           name: 'remodelPlan',
@@ -342,7 +307,7 @@ export default defineType({
             }),
             defineField({
               name: 'mainImage',
-              title: 'Quick Tip Image',
+              title: 'Remodel Image',
               type: 'image',
               validation: (Rule) => Rule.required(),
               options: {
