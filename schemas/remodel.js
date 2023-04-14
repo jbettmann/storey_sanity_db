@@ -17,7 +17,7 @@ export default defineType({
       type: 'reference',
       to: {type: 'faqs'},
       validation: (Rule) => Rule.required(),
-      description: '** Slug MUST match the Slug on Remodel FAQ page **',
+      description: '** Slug MUST match the Slug on Remodel FAQ page ***',
     }),
     // Hero *************************
     defineType({
